@@ -4,14 +4,17 @@
     font-family: "Cutive Mono", monospace;
     font-style: normal;
 }
+/* Cuerpo base para todas las páginas */
 body{
     background-color: #ffeadb;
     min-height: 100vh;
     background-size: cover;
 }
+/* Permite volver al index tocando el logo en todas las páginas */
 .to-index{
     text-decoration: none;
 }
+/* Contenedor para el menu en todas las páginas */
 .menu{
     position: absolute;
     background-color: #ff9a76;
@@ -412,6 +415,7 @@ font-size: 9px;
     justify-content: center;
     position: relative;
 }
+/* Tipos de productos que tenemos disponibles */
 .card{
     position: relative;
     width: 300px;
@@ -474,6 +478,7 @@ font-size: 9px;
 .card .back p{
     letter-spacing: 1px;
 }
+/* Movimiento de los productos mostrando las características de estos */
 .card:hover .front{
     transform: perspective(600px) rotateY(180deg);
 }
@@ -614,6 +619,7 @@ font-size: 9px;
     pointer-events: none;
     transition: .5s;
 }
+/* Movimiento de las letras al introducir los datos */
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: 5px;
@@ -668,6 +674,7 @@ font-size: 9px;
     height: fit-content;
     padding: 40px;
 }
+/* Error de página al registrarse o iniciar sesión */
 .error{
     background: url(../video/Error404.gif)   center no-repeat;
     background-size: 100% 100%;
@@ -675,6 +682,7 @@ font-size: 9px;
     height: 100%;
     position: absolute;
 }
+                                        /* Banner para todas las páginas */
 .banner{
     background-color: #679b9b;
     position: absolute;
@@ -709,6 +717,7 @@ font-size: 9px;
     margin-top: -7.5em;
     margin-bottom: 10.3em;
 }
+                              /* Boton back to top, permite volver al inicio de la pagina en la que se encuentra */
 
 .custom-btn {
     width: 40px;
@@ -751,6 +760,8 @@ font-size: 9px;
         font-size: 16px;
         padding: 0 10px;
     }
+                                             /* Responsive Proyectos y servicios */
+
     .servicios> p{
         font-size: 16px;
     }
@@ -758,11 +769,15 @@ font-size: 9px;
         margin-bottom: 15px;
         width:auto;
     }
+    .contenedor{
+        margin-top: 60px;
+    }
+                                                /* Responsive Banner */
     .direccion, .derechos{
         margin: -7.5em 0  10.3em 14em;
 
     }
-
+                                            /* Responsive Productos */
     .productos{
         height: 55em;
     }
@@ -771,7 +786,7 @@ font-size: 9px;
         width:250px ;
     }
     
-                                               /*  Pagina Quienes Somos */
+                                               /*  Responsive Quienes Somos */
     .quienes_somos1{
         position: absolute;
         width: 100%;
@@ -855,13 +870,8 @@ font-size: 9px;
         color: #000000;
         text-align: center;
     }  
-                                             /* Pagina de sericios */
-    
-    .contenedor{
-        margin-top: 60px;
-    }
 
-                                            /* Pagina de Contacto */
+                                          /* Responsive Contacto */
     
     .area_contactos{
         width: 100%;
@@ -941,9 +951,13 @@ font-size: 9px;
     .menu li a:hover{
         background: none;
     }
+        /* Movimiento de menú */
+
     #checkbox:checked ~ul{
         right: -40px;
     }
+                                                /* Responsive Proyectos y servicios */
+
     .contenedor{
         margin-top: 150px;
     }
@@ -979,6 +993,8 @@ font-size: 9px;
     .pie_servi{
         top: 155em;
     }
+                                                    /* Responsive Productos */
+
     .productos{
         top: 50px;
         height: 90em;
@@ -992,6 +1008,8 @@ font-size: 9px;
     .carta3{
         top: 700px;
     }
+                                                    /* Responsive Area de clientes */
+
     .clientes{
         width: 25em;
         height: 80em;
@@ -1005,6 +1023,8 @@ font-size: 9px;
         position: relative;
         margin-bottom: 40px;
     }
+                                                    /* Responsive del Banner */
+
     .banner>img{
         margin-left: 50%;
         transform: translateX(-50%);
@@ -1023,7 +1043,7 @@ font-size: 9px;
         text-align: center;
         margin: 10px;
     }
-                        /*  Pagina Quienes Somos */
+                                            /*  Responsive Quienes Somos */
 
 .quienes_somos2{
     top:650px;
@@ -1100,7 +1120,7 @@ font-size: 9px;
 }
 
 
-                                        /* Pagina de Contacto */
+                                            /* Responsive para Contacto */
 
 .area_contactos{
     width: 100%;
@@ -1140,7 +1160,7 @@ font-size: 9px;
     width: 85%;
 }
 
-                                        /* Pagina de Blog de noticias */
+                                            /* Responsive Blog de noticias */
 
 
 .caja-grande{
