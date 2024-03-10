@@ -120,6 +120,7 @@ background-color: #679b9b;
 position: relative;
 margin-left: 40px;
 display: block;
+z-index: 20;
 }
 #logo{
 position: relative;
@@ -199,20 +200,24 @@ font-size: 9px;
     position: relative;
 }
 .conocenos{
+    
     position: absolute;
     top: 350px;
     margin-left: 120px;
     font-size: 32px;
 }
 .text-conocenos{
+    padding: 20px;
+    border-radius: 22px;
+    background-color: #e0c9c0b3;
     position: relative;
-    float: right;
-    width: 40em;
+    float: left;
+    width: 45em;
     top: -128em;
     margin-right:350px;
 }
 #text-naraj{ 
-    color: orangered;
+    color: rgb(216, 68, 14);
     font-size: 32px;
 }
 #text-debajo{
@@ -264,6 +269,7 @@ font-size: 9px;
     position: absolute;
     display: flex;
     justify-content: center;
+    top: 14em;
     
 }
 #servicios{
@@ -798,14 +804,15 @@ font-size: 9px;
         width: 40em;
     }
     #conoce2>img{
-        width: 54em;
+        width: 100%;
     }
     .text-conocenos{
+        background-color: #679b9b00;
         position: relative;
         float: right;
-        width: 30em;
-        top: 4em;
-        left: 190px;
+        width: 32em;
+        top: 0em;
+        margin-right: 20px;
     }
     #text-naraj{ 
         color: orangered;
@@ -848,6 +855,12 @@ font-size: 9px;
         color: #000000;
         text-align: center;
     }  
+                                             /* Pagina de sericios */
+    
+    .contenedor{
+        margin-top: 60px;
+    }
+
                                             /* Pagina de Contacto */
     
     .area_contactos{
@@ -857,7 +870,17 @@ font-size: 9px;
     }
     .conte-contacto{
         top: 5em;
-        
+    }
+    #encuentranos{
+        width: 30em ;
+        left: 10px;
+    }
+    #contactar{
+        width: 30em ;
+        right: 100px;
+    }
+    #consulta{
+        width:85% ;
     }
     .pie_contact{
         top: 35em;
@@ -926,6 +949,7 @@ font-size: 9px;
     }
     .servicios{
         position: absolute;
+        width: 80%;
     }
     .servicio1{
         top: 50px;
@@ -938,6 +962,7 @@ font-size: 9px;
     }
     .contenedor2{
         top: 1600px;
+        width: 100%;
     }
     .video_gallery span{
         transform: rotateY(calc(var(--i)* 90deg)) translateZ(150px);
@@ -947,6 +972,9 @@ font-size: 9px;
     }
     .flechas{
         margin-top: 550px;
+    }
+    .contenedor{
+        top: 0px;
     }
     .pie_servi{
         top: 155em;
@@ -972,6 +1000,8 @@ font-size: 9px;
         height: 100em;
     }
     .form-box{
+        margin-left:-2em ;
+        width: 25em;
         position: relative;
         margin-bottom: 40px;
     }
@@ -983,8 +1013,8 @@ font-size: 9px;
     .contactanos{
         position: absolute;
         top: 20em;
-        width: 30em;
-        margin: auto;
+        width: 100%;
+        margin: 0 auto;
         left: 0;
         right: 0;
         padding: 0;
@@ -994,16 +1024,11 @@ font-size: 9px;
         margin: 10px;
     }
                         /*  Pagina Quienes Somos */
-    .quienes_somos1{
-    position: absolute;
-    width: 100%;
-    
-    top: 50px;
-    z-index: -20;
-}
+
 .quienes_somos2{
-    top: 600px;
-    height: 110em;
+    top:650px;
+    height: 90em;
+    width: 100%;
     position: relative;
     
 }
@@ -1027,7 +1052,7 @@ font-size: 9px;
 }
 #conoce>img{
     float: right;
-    width: 53em;
+    width: 200%;
 }
 #conoce2{
     position: absolute;
@@ -1038,53 +1063,42 @@ font-size: 9px;
     display: none;
 }
 .text-conocenos{
+    top: 50px;
     position: relative;
-    width: 25em;
-    left: 170px;
-    height: fit-content;
-    
+    left: -10px;
+    width: 80%;   
 }
+
 #text-naraj{ 
     color: rgb(235, 139, 105);
-    font-size:27px;
+    font-size:20px;
     
 }
 #text-debajo{
     color: white;
-    font-size: 20px;
-    float: right;
+    font-size: 18px;
     background-color: #ff9b7671;
     padding: 8px;
     border-radius: 10px;
 }
 
 .saber{
-    position: relative;
+    position: absolute;
+    display: block;
     top: 32em;
-    left: 160px;
-    justify-content: center;
-    width: 170px;
-    height: 35px;
-    border-radius: 50px;
-    border-style: none;
-    background-color: #ff9a76;
-    
-    box-shadow: inset 3px 3px 2px 0px rgba(255, 205, 188, 0.692),
-                    4px 4px 5px 0px rgba(204, 152, 133, 0.788),
-                    6px 6px 10px 0px rgba(116, 43, 20, 0.411);
-    
 }
-.saber:hover{
-    cursor:pointer;
-    box-shadow: inset 3px 3px 10px 0px rgba(116, 43, 20, 0.411),
-                    4px 4px 5px 0px rgba(204, 152, 133, 0.788),
-                    3px 3px 2px 0px rgb(255, 205, 188);
-}
+
 .saber>a{
     text-decoration: none;
     color: #000000;
     text-align: center;
 }
+.pie_quien{
+    top:47em ;
+    width: 100%;
+ 
+}
+
 
                                         /* Pagina de Contacto */
 
@@ -1095,17 +1109,19 @@ font-size: 9px;
 }
 .conte-contacto{
     position: relative;
-    margin: auto;
-    width: 90em;
-    top: 6em;
-    left: 0;
+    display: block;
+    /* margin-left: -10px; */
+    width: fit-content;
+    /* top: 6em;
+    left: 0; */
 }
 #encuentranos{
     text-align: center;
-    left: 43px;
-    width: 20em;
+    left: 15px;
+    width: 18em;
     height: 44em;
     padding: 40px;
+    
 }
 #encuentranos>iframe{
     margin-top: 50px;
@@ -1115,18 +1131,20 @@ font-size: 9px;
 }
 
 #contactar{
-    left: 43px;
-    width: 20em;
+    left: 15px;
+    width: 18em;
     height: 44em;
     padding: 40px;
 }
 #consulta{
     width: 85%;
 }
+
                                         /* Pagina de Blog de noticias */
 
 
 .caja-grande{
+    margin: 50px;
     font-size: 16px;
     padding: 22px;
 }
@@ -1135,9 +1153,10 @@ font-size: 9px;
     margin: -3px;
     margin-bottom:20px;
     margin-top: 10px;
-    width: 310px;
-    height: 215px;
+    width: 250px;
+    height: 200px;
     border-radius: 10px;
 }
+
 
 }
